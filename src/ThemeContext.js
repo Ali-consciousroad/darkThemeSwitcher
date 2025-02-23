@@ -2,7 +2,7 @@ import { createContext, useContext, useState } from "react";
 
 // Step 1.
 // Create a context
-const MyContext = createContext(undefined);
+const ThemeContext = createContext(undefined);
 
 // Implement the ThemeProvider component
 export const ThemeProvider = ({ children }) => {
