@@ -14,6 +14,8 @@ export const ThemeProvider = ({ children }) => {
     const toggleTheme = () => {
         /* Use of function form of the state updater instead of the state "theme" directly 
         to ensure the state is based on the most recent state value and avoid bugs */
+        // Work with the state direclty, this also works but can cause errors as explained above. 
+        // setTheme((theme === "light" ? "dark" : "light"));
         setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
     };
 
